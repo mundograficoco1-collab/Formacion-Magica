@@ -1,0 +1,23 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="40" y1="30" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F3DD8E"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8C6B22"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="70" y1="70" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8FE6F0"/>
+      <stop offset="100%" stop-color="#4FD1E0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="96" fill="#07060B" stroke="url(#gold)" stroke-width="10"/>
+  <circle cx="110" cy="110" r="74" stroke="#F3DD8E" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M110 48L122 90L166 110L122 130L110 172L98 130L54 110L98 90L110 48Z" fill="url(#gold)"/>
+  <path d="M110 66C132 66 150 84 150 106C150 128 132 146 110 146C88 146 70 128 70 106C70 84 88 66 110 66Z" stroke="url(#cyan)" stroke-width="5"/>
+  <circle cx="110" cy="106" r="22" fill="#4FD1E0" fill-opacity="0.92"/>
+  <path d="M110 86V126" stroke="#0D0A16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M90 106H130" stroke="#0D0A16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 60C87 50 98 44 110 44" stroke="#F3DD8E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M142 60C133 50 122 44 110 44" stroke="#F3DD8E" stroke-width="3" stroke-linecap="round"/>
+  <text x="110" y="188" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="24" font-weight="700" letter-spacing="3" fill="#F3DD8E">FM</text>
+</svg>
