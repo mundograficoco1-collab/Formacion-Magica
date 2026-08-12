@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formación Mágica — Instituto de Evolución Interior</title>
+    <title>Loly Luz del Alma — Transformación personal</title>
     <meta name="description"
-        content="Amarres de amor, limpias energéticas y cura de mal de ojo. Instituto de Evolución Interior.">
+        content="Loly Luz del Alma: acompañamiento personalizado para comprender bloqueos emocionales, transformar patrones y desarrollar una vida más consciente.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
@@ -1430,6 +1430,47 @@
             font-size: 1.2rem;
             color: var(--parchment);
         }
+
+        /* ================= NUEVA EXPERIENCIA LOLY ================= */
+        .brand img, .hero-logo { border-radius: 0 !important; object-fit: contain !important; }
+        #servicios, #amarres, #limpias { display:none; }
+        #cursos .lobby-wrap, #curso-desbloqueado { display:none; }
+        #testimonios .testi-track { display:none; }
+        .brand img { width: 154px !important; height: 62px !important; border: 0 !important; padding: 0 !important; background: none !important; box-shadow: none !important; }
+        .brand-text { display: none; }
+        .hero-logo { width: min(240px, 58vw) !important; height: auto !important; margin: 0 auto 12px; }
+        .hero .eyebrow { color: var(--glow-blue); }
+        .hero h1 { max-width: 1040px; font-size: clamp(2.25rem, 5.3vw, 4.6rem); }
+        .hero p.lede { max-width: 760px; }
+        .intro-copy { max-width: 760px; margin: 18px auto 0; color: var(--parchment-dim); }
+        .help-grid, .renacer-includes, .service-grid, .ritual-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+        .help-card { padding:22px; border:1px solid var(--line); border-radius:18px; background:linear-gradient(145deg,rgba(20,15,34,.94),rgba(7,6,11,.92)); transition:.3s ease; }
+        .help-card:hover { border-color:rgba(79,209,224,.55); transform:translateY(-4px); }
+        .help-card .symbol { color:var(--gold); font-size:1.5rem; line-height:1; display:block; margin-bottom:8px; }
+        .help-card h3 { font-size:1.25rem; }
+        .personal-process { max-width:1000px; margin:0 auto; padding:42px; text-align:center; border:1px solid var(--line); border-radius:28px; background:radial-gradient(circle at 50% 0,rgba(79,209,224,.13),transparent 45%),linear-gradient(135deg,var(--void),var(--void-2)); }
+        .method-path { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:35px; }
+        .method-step { position:relative; text-align:left; padding:18px 12px; border-top:1px solid var(--gold); }
+        .method-step b { display:block; color:var(--gold); letter-spacing:.12em; margin-bottom:8px; }
+        .method-step span { color:var(--parchment); font-family:'Cormorant Garamond'; font-size:1.1rem; line-height:1.15; }
+        .renacer { border:1px solid rgba(212,175,55,.5); border-radius:30px; padding:clamp(28px,5vw,62px); background:radial-gradient(circle at 85% 10%,rgba(79,209,224,.18),transparent 24%),radial-gradient(circle at 10% 90%,rgba(212,175,55,.17),transparent 32%),linear-gradient(135deg,#100c1d,#07060b); }
+        .renacer-top { display:grid; grid-template-columns:1.2fr .8fr; gap:36px; align-items:center; }
+        .price-tag { padding:22px; border:1px solid var(--line); border-radius:18px; text-align:center; background:rgba(7,6,11,.52); }
+        .price-tag b { display:block; font:600 clamp(2.2rem,5vw,3.7rem) 'Cormorant Garamond'; color:var(--gold-light); }
+        .price-tag span { color:var(--parchment-dim); }
+        .renacer-includes { grid-template-columns:repeat(2,1fr); margin:32px 0; }
+        .renacer-includes div { padding:12px 0; border-bottom:1px solid rgba(212,175,55,.14); color:var(--parchment); }
+        .renacer-includes div::before { content:'✦'; color:var(--gold); margin-right:10px; }
+        .service-card, .ritual-card { border:1px solid var(--line); background:linear-gradient(145deg,var(--void),var(--void-2)); border-radius:20px; padding:28px; }
+        .service-card h3, .ritual-card h3 { color:var(--gold-light); font-size:1.55rem; }
+        .service-meta { color:var(--glow-blue); margin:12px 0; font-size:.94rem; }
+        .service-price { color:var(--gold); font-size:1.35rem; font-family:'Cormorant Garamond'; }
+        .course-placeholder { border:1px dashed rgba(79,209,224,.45); border-radius:24px; padding:48px 28px; text-align:center; background:linear-gradient(135deg,rgba(20,15,34,.85),rgba(7,6,11,.72)); }
+        .about-grid { display:grid; grid-template-columns:.7fr 1.3fr; gap:36px; align-items:center; }
+        .about-mark { aspect-ratio:1; display:grid; place-items:center; border-radius:50%; border:1px solid var(--line); background:radial-gradient(circle,rgba(79,209,224,.17),transparent 62%); color:var(--gold); font:700 clamp(3rem,9vw,7rem) 'Cinzel Decorative'; }
+        .final-cta { text-align:center; max-width:980px; margin:0 auto; padding:62px 30px; border-radius:28px; background:radial-gradient(circle at 50% 0,rgba(212,175,55,.2),transparent 50%),var(--void-2); border:1px solid var(--line); }
+        @media (max-width:920px) { .help-grid,.service-grid,.ritual-grid { grid-template-columns:repeat(2,1fr); } .method-path { grid-template-columns:repeat(2,1fr); } .renacer-top,.about-grid { grid-template-columns:1fr; } }
+        @media (max-width:580px) { .help-grid,.service-grid,.ritual-grid,.renacer-includes,.method-path { grid-template-columns:1fr; } .personal-process,.renacer { padding:26px 20px; } .brand img { width:126px !important; } }
     </style>
 </head>
 
@@ -1442,7 +1483,7 @@
                 <circle class="c1" cx="110" cy="110" r="95"></circle>
                 <circle class="c2" cx="110" cy="110" r="70"></circle>
             </svg>
-            <div class="pre-word"><span>Formación Mágica</span></div>
+            <div class="pre-word"><span>Loly Luz del Alma</span></div>
         </div>
     </div>
 
@@ -1451,23 +1492,22 @@
     <!-- ================= HEADER ================= -->
     <header id="siteHeader">
         <a href="index.html" class="brand">
-            <img src="assets/logo-circular.svg" alt="Formación Mágica" style="width:54px;height:54px;border-radius:50%;object-fit:cover;"><div class="brand-text">
-                <b>Formación Mágica</b>
-                <small>Instituto de Evolución Interior</small>
+            <img src="assets/logo-luzdelalma.png" alt="Loly Luz del Alma" style="width:54px;height:54px;border-radius:50%;object-fit:cover;"><div class="brand-text">
+                <b>Loly Luz del Alma</b>
+                <small>Especialista en procesos de transformación personal</small>
             </div>
         </a>
 
         <nav>
             <div class="nav-links" style="display:flex; align-items:center; gap:28px;">
                 <a href="index.html" class="nav-link">Inicio</a>
-                <a href="metodologia.html" class="nav-link">Metodología</a>
-                <a href="servicios.html" class="nav-link">Servicios</a>
-                <a href="amarres.html" class="nav-link">Amarres</a>
-                <a href="mal-de-ojo.html" class="nav-link">Mal de Ojo</a>
-                <a href="testimonios.html" class="nav-link">Testimonios</a>
-                <a href="cursos.html" class="nav-link">Cursos</a>
-                <span class="course-tab" id="courseTab"><span class="dot"></span> Mi Curso</span>
-                <a href="consulta-privada.html" class="nav-cta">Consulta privada</a>
+                <a href="#como-trabaja" class="nav-link">Cómo trabaja</a>
+                <a href="#renacer" class="nav-link">Programa Renacer</a>
+                <a href="#sesiones" class="nav-link">Sesiones</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#sobre-loly" class="nav-link">Sobre Loly</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="consulta-privada.html" class="nav-cta">Solicita tu llamada</a>
             </div>
         </nav>
 
@@ -1476,11 +1516,13 @@
 
     <div class="mobile-drawer" id="mobileDrawer">
         <a href="index.html">Inicio</a>
-        <a href="metodologia.html">Metodología</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="testimonios.html">Testimonios</a>
-        <a href="cursos.html">Cursos</a>
-        <a href="consulta-privada.html">Consulta privada</a>
+        <a href="#como-trabaja">Cómo trabaja</a>
+        <a href="#renacer">Programa Renacer</a>
+        <a href="#sesiones">Sesiones</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#sobre-loly">Sobre Loly</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="consulta-privada.html">Solicita tu llamada</a>
     </div>
 
     <!-- ================= HERO ================= -->
@@ -1490,19 +1532,14 @@
         <div class="sigil-ring r3"></div>
 
         <div class="hero-inner">
-            <img class="hero-logo" src="assets/logo-circular.svg" alt="Formación Mágica" style="width:54px;height:54px;border-radius:50%;object-fit:cover;">
-            <div class="hero-badges">
-                <span class="hero-badge"><span class="hero-dot"></span>Atención privada</span>
-                <span class="hero-badge"><span class="hero-dot"></span>Diagnóstico inicial</span>
-                <span class="hero-badge"><span class="hero-dot"></span>Seguimiento humano</span>
-            </div>
-            <span class="eyebrow">instituto de evolución interior</span>
-            <h1>Cuando la energía se enreda,<br><em>la guía correcta la devuelve al orden.</em></h1>
-            <p class="lede">Trabajamos con claridad, respeto y profundidad espiritual para ayudarte a sanar vínculos,
-                liberar cargas y recuperar tu equilibrio interior.</p>
+            <img class="hero-logo" src="assets/logo-luzdelalma.png" alt="Loly Luz del Alma" style="width:54px;height:54px;border-radius:50%;object-fit:cover;">
+            <span class="eyebrow">especialista en procesos de transformación personal</span>
+            <h1>CUANDO ENTIENDES LA RAÍZ DEL CONFLICTO…<br><em>LA VIDA COMIENZA A CAMBIAR</em></h1>
+            <p class="lede">Quizá llevas años intentando sentirte mejor. Has leído libros, has hecho terapias y has intentado olvidar. Pero el problema sigue apareciendo con otro rostro.</p>
+            <p class="intro-copy">No porque seas débil, sino porque la verdadera causa permanece oculta en tu subconsciente. Loly te acompaña a descubrir esa raíz y a trabajarla con un proceso personalizado, profundo y respetuoso.</p>
             <div class="hero-ctas">
-                <a href="consulta-privada.html" class="btn btn-primary">Solicita tu valoración</a>
-                <a href="cursos.html" class="btn btn-ghost">Explora la formación</a>
+                <a href="#renacer" class="btn btn-primary">Quiero comenzar mi transformación</a>
+                <a href="consulta-privada.html" class="btn btn-ghost">Solicita tu llamada gratuita</a>
             </div>
         </div>
 
@@ -1510,38 +1547,26 @@
     </section>
 
     <!-- ================= METODOLOGÍA ================= -->
-    <section id="metodologia">
+    <section id="ayuda">
         <div class="section-head reveal">
-            <span class="eyebrow">metodología</span>
-            <h2>Una experiencia clara, discreta y profundamente profesional</h2>
-            <p>Cada consulta está pensada para devolver orden a lo que se siente caótico, con un enfoque humano, ético y sin improvisaciones.</p>
+            <span class="eyebrow">acompañamiento personalizado</span>
+            <h2>¿En qué puedo ayudarte?</h2>
+            <p>Un espacio para comprender lo que estás viviendo, mirar su raíz emocional y abrir posibilidades de cambio.</p>
             <div class="divider"></div>
         </div>
+        <div class="help-grid reveal">
+            <div class="help-card"><span class="symbol">✦</span><h3>Dependencia emocional</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Relaciones difíciles o abusivas</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Ansiedad</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Baja autoestima</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Duelos y miedos</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Bloqueos económicos</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Patrones familiares repetitivos</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Trauma emocional</h3></div><div class="help-card"><span class="symbol">✦</span><h3>Propósito de vida y desarrollo espiritual</h3></div>
+        </div>
+    </section>
 
-        <div class="section-surface reveal d1">
-            <div class="process-grid">
-                <div class="process-card reveal d1">
-                    <div class="step">01</div>
-                    <h3>Diagnóstico</h3>
-                    <p>Escuchamos tu caso con atención para identificar la raíz del conflicto, la carga o la desconexión.</p>
-                </div>
-                <div class="process-card reveal d2">
-                    <div class="step">02</div>
-                    <h3>Trabajo ritual</h3>
-                    <p>Diseñamos el ritual de forma precisa, usando herramientas limpias, simbólicas y adaptadas a tu situación.</p>
-                </div>
-                <div class="process-card reveal d3">
-                    <div class="step">03</div>
-                    <h3>Acompañamiento</h3>
-                    <p>Te guiamos después del proceso para que tu recuperación sea estable, consciente y sin confusión.</p>
-                </div>
-            </div>
-            <div class="trust-strip">
-                <span class="trust-pill">Discreción absoluta</span>
-                <span class="trust-pill">Atención personalizada</span>
-                <span class="trust-pill">Seguimiento claro</span>
-                <span class="trust-pill">Respeto por el tiempo y la energía</span>
-            </div>
+    <section id="como-trabaja">
+        <div class="personal-process reveal">
+            <span class="eyebrow">un proceso diseñado especialmente para ti</span>
+            <h2>Cada historia merece ser escuchada en profundidad</h2>
+            <p>Cada persona tiene una historia diferente. Por eso no trabajo con soluciones generales. Cada sesión se adapta a tus necesidades y combina diferentes herramientas terapéuticas para llegar al origen emocional del conflicto y facilitar cambios reales y sostenibles.</p>
+            <div class="divider"></div>
+            <span class="eyebrow">Método BHR® — Bio hipnosis Reprogramativa</span>
+            <div class="method-path"><div class="method-step"><b>01</b><span>Hipnosis regresiva</span></div><div class="method-step"><b>02</b><span>Biodescodificación</span></div><div class="method-step"><b>03</b><span>Reprogramación de creencias</span></div><div class="method-step"><b>04</b><span>Conexión espiritual</span></div><div class="method-step"><b>05</b><span>Ejercicios de integración y crecimiento personal</span></div></div>
         </div>
     </section>
 
@@ -1668,11 +1693,27 @@
         </div>
     </section>
 
+    <section id="renacer">
+        <div class="section-head reveal"><span class="eyebrow">acompañamiento premium</span><h2>Programa Renacer</h2><p>Transformación Integral en 90 Días</p><div class="divider"></div></div>
+        <div class="renacer reveal"><div class="renacer-top"><div><h3>Un proceso de acompañamiento personalizado para transformar vidas desde la raíz.</h3><p>Durante tres meses trabajamos con presencia, continuidad y una ruta adaptada a tu historia para comprender y transformar los patrones que hoy limitan tu bienestar.</p></div><div class="price-tag"><span>Inversión</span><b>USD 1.500</b><span>Online o presencial según disponibilidad</span></div></div><div class="renacer-includes"><div>90 días de acompañamiento personalizado</div><div>12 sesiones individuales de 2 horas</div><div>Soporte y seguimiento por WhatsApp entre sesiones</div><div>Material de apoyo en PDF</div><div>Ejercicios prácticos</div><div>Plan de trabajo adaptado</div><div>Seguimiento continuo de tu evolución</div></div><a href="consulta-privada.html" class="btn btn-primary">Solicita tu llamada gratuita</a></div>
+    </section>
+
+    <section id="sesiones">
+        <div class="section-head reveal"><span class="eyebrow">sesiones personalizadas</span><h2>Un espacio para ir a la raíz</h2><p>Procesos individuales realizados con respeto por tu historia, tus tiempos y tus creencias.</p><div class="divider"></div></div>
+        <div class="service-grid reveal"><article class="service-card"><h3>Regresión Terapéutica Integrativa</h3><p class="service-meta">1 h 45 min – 2 h · Online — Google Meet</p><p>Un encuentro orientado a comprender el origen emocional de los bloqueos, transformar patrones inconscientes e integrar nuevos recursos para tu proceso personal.</p><p class="service-price">USD 150</p></article><article class="service-card"><h3>Regresión Espiritual y Transpersonal</h3><p class="service-meta">1 h 45 min – 3 h · Online — Google Meet</p><p>Integra una dimensión espiritual dentro del proceso cuando la persona lo desea, respetando profundamente sus creencias y su propia experiencia.</p><p class="service-price">USD 197</p></article></div>
+    </section>
+
+    <section id="rituales">
+      <div class="section-head reveal"><span class="eyebrow">espiritualidad consciente</span><h2>Rituales de Transformación y Protección Espiritual</h2><p>Procesos simbólicos y espirituales que acompañan la intención de proteger, cerrar ciclos y recuperar equilibrio interior; no sustituyen decisiones, atención médica ni resultados garantizados.</p><div class="divider"></div></div>
+      <div class="ritual-grid reveal"><article class="ritual-card"><h3>Ritual Abrecaminos</h3><p>Un acto simbólico para acompañar nuevas posibilidades y movimiento personal.</p><p class="service-price">USD 335</p></article><article class="ritual-card"><h3>Ritual de Protección</h3><p>Un espacio de intención y cuidado espiritual para fortalecer tus límites.</p><p class="service-price">USD 335</p></article><article class="ritual-card"><h3>Ritual de Justicia y Restablecimiento del Equilibrio</h3><p>Una práctica simbólica para soltar cargas y volver a tu centro.</p><p class="service-price">USD 335</p></article><article class="ritual-card"><h3>Ritual de Alejamiento y Cierre de Ciclos</h3><p>Un acompañamiento espiritual para reconocer, despedir y cerrar etapas.</p><p class="service-price">USD 335</p></article></div>
+    </section>
+
     <!-- ================= TESTIMONIOS ================= -->
     <section id="testimonios">
         <div class="section-head reveal">
             <span class="eyebrow">testimonios</span>
-            <h2>Voces de quienes ya cruzaron el umbral</h2>
+            <h2>Experiencias compartidas con autenticidad</h2>
+            <p>Las experiencias personales se presentan respetando siempre la voz, el nombre y el contexto de cada persona.</p>
             <div class="divider"></div>
         </div>
         <div class="testi-track">
@@ -1708,11 +1749,12 @@
     <!-- ================= CURSOS / LOBBY ================= -->
     <section id="cursos">
         <div class="section-head reveal">
-            <span class="eyebrow">formación</span>
-            <h2>El lobby de tu evolución interior</h2>
-            <p>Aquí aparecerá tu curso en cuanto se confirme tu acceso.</p>
+            <span class="eyebrow">Aprenderlo por tu cuenta</span>
+            <h2>También puedes aprender a tu ritmo</h2>
+            <p>Si prefieres comenzar por tu cuenta, encontrarás cursos grabados, talleres y programas diseñados para ayudarte a desarrollar nuevas herramientas de crecimiento personal y espiritual desde cualquier lugar del mundo.</p>
             <div class="divider"></div>
         </div>
+        <div class="course-placeholder reveal"><span class="eyebrow">próximamente</span><h3>Una nueva biblioteca de cursos y talleres</h3><p>Estamos preparando el espacio para compartir los programas disponibles. Suscríbete a una llamada para conocer las próximas propuestas.</p><a href="consulta-privada.html" class="btn btn-ghost">Quiero recibir información</a></div>
 
         <div class="lobby-wrap">
             <div class="lobby-card locked-panel reveal d1" id="lockedCard">
@@ -1791,6 +1833,12 @@
         </div>
     </section>
 
+    <section id="sobre-loly">
+      <div class="about-grid reveal"><div class="about-mark">L</div><div><span class="eyebrow">sobre loly</span><h2>Una guía nacida de su propio proceso de transformación</h2><p>El camino de Loly une una profunda conexión con la naturaleza y la espiritualidad con el estudio del funcionamiento de la mente. Su búsqueda personal la llevó a profundizar en biodescodificación, hipnosis y herramientas de acompañamiento para sostener procesos de cambio con sensibilidad y presencia.</p><p>Hoy acompaña a cada persona desde el respeto: sin fórmulas universales, con escucha atenta y con la convicción de que comprender la raíz abre una nueva manera de vivir.</p></div></div>
+    </section>
+
+    <section id="llamada"><div class="final-cta reveal"><span class="eyebrow">el primer paso</span><h2>Tu transformación puede comenzar con una conversación</h2><p>Conversemos sobre lo que estás viviendo y descubramos si este acompañamiento es para ti.</p><div class="hero-ctas"><a href="consulta-privada.html" class="btn btn-primary">Solicita tu llamada gratuita</a><a href="#renacer" class="btn btn-ghost">Quiero comenzar mi transformación</a></div></div></section>
+
     <!-- ================= CONTACTO ================= -->
     <section id="contacto">
         <div class="contact-wrap">
@@ -1824,11 +1872,11 @@
                         placeholder="¿Cómo te contactamos?"></div>
                 <div class="field"><label>¿Qué necesitas?</label>
                     <select>
-                        <option>Amarre de amor</option>
-                        <option>Cura de mal de ojo</option>
-                        <option>Limpia energética</option>
-                        <option>Lectura de tarot</option>
-                        <option>Formación / cursos</option>
+                        <option>Programa Renacer</option>
+                        <option>Sesión terapéutica integrativa</option>
+                        <option>Regresión espiritual y transpersonal</option>
+                        <option>Rituales de transformación</option>
+                        <option>Cursos / talleres</option>
                     </select>
                 </div>
                 <div class="field"><label>Cuéntanos tu caso</label><textarea
@@ -1839,13 +1887,14 @@
     </section>
 
     <footer>
-        <div class="f-brand">Formación Mágica</div>
-        <p>Instituto de Evolución Interior</p>
+        <img src="assets/logo-luzdelalma.png" alt="Loly Luz del Alma" style="width:150px;height:auto;margin:0 auto 14px;">
+        <div class="f-brand">Loly Luz del Alma</div>
+        <p>Especialista en procesos de transformación personal</p>
         <div class="f-links">
-            <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="cursos.html">Cursos</a><a
-                href="consulta-privada.html">Consulta privada</a>
+            <a href="index.html">Inicio</a><a href="#renacer">Programa Renacer</a><a href="#sesiones">Sesiones</a><a
+                href="consulta-privada.html">Solicita tu llamada</a>
         </div>
-        <p>© 2026 Formación Mágica. Todos los derechos reservados.</p>
+        <p>© 2026 Loly Luz del Alma. Todos los derechos reservados.</p>
     </footer>
 
     <!-- ================= MODAL DE PAGO ================= -->
