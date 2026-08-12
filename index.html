@@ -1432,15 +1432,19 @@
         }
 
         /* ================= NUEVA EXPERIENCIA LOLY ================= */
-        .brand img, .hero-logo { border-radius: 0 !important; object-fit: contain !important; }
-        #servicios, #amarres, #limpias { display:none; }
-        #cursos .lobby-wrap, #curso-desbloqueado { display:none; }
-        #testimonios .testi-track { display:none; }
-        .brand img { width: 154px !important; height: 62px !important; border: 0 !important; padding: 0 !important; background: none !important; box-shadow: none !important; }
+        .brand img, .hero-logo { border-radius: 50% !important; object-fit: cover !important; overflow: hidden !important; }
+        .nav-home { display: none !important; }
+        .brand img { width: 56px !important; height: 56px !important; border: 2px solid rgba(212,175,55,.55) !important; padding: 2px !important; background: linear-gradient(135deg, rgba(243,221,142,.16), rgba(79,209,224,.12)) !important; box-shadow: 0 0 0 4px rgba(212,175,55,.12) !important, 0 8px 20px rgba(0,0,0,.18) !important; }
         .brand-text { display: none; }
-        .hero-logo { width: min(240px, 58vw) !important; height: auto !important; margin: 0 auto 12px; }
+        .hero-logo { width: min(220px, 52vw) !important; height: auto !important; margin: 0 auto 12px; }
         .hero .eyebrow { color: var(--glow-blue); }
         .hero h1 { max-width: 1040px; font-size: clamp(2.25rem, 5.3vw, 4.6rem); }
+        .tab-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+        .tab-link { display: inline-flex; align-items: center; justify-content: center; padding: 10px 18px; border-radius: 999px; border: 1px solid rgba(212,175,55,.24); color: var(--parchment-dim); background: rgba(255,255,255,.04); transition: all .25s ease; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.12em; }
+        .tab-link.active, .tab-link:hover { background: rgba(212,175,55,.15); border-color: rgba(212,175,55,.45); color: var(--gold-light); }
+        .tab-link.active { box-shadow: 0 12px 24px rgba(212,175,55,.09); }
+        .tab-panel { display: none; opacity: 0; max-height: 0; overflow: hidden; transition: opacity .3s ease, max-height .35s ease; }
+        .tab-panel.active { display: block; opacity: 1; max-height: 200rem; }
         .hero p.lede { max-width: 760px; }
         .intro-copy { max-width: 760px; margin: 18px auto 0; color: var(--parchment-dim); }
         .help-grid, .renacer-includes, .service-grid, .ritual-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
@@ -1500,14 +1504,14 @@
 
         <nav>
             <div class="nav-links" style="display:flex; align-items:center; gap:28px;">
-                <a href="index.html" class="nav-link">Inicio</a>
-                <a href="#como-trabaja" class="nav-link">Cómo trabaja</a>
+                <a href="index.html" class="nav-link nav-home">Inicio</a>
+                <a href="#como-trabaja" class="nav-link nav-como-trabaja">Cómo trabaja</a>
                 <a href="#renacer" class="nav-link">Programa Renacer</a>
                 <a href="#sesiones" class="nav-link">Sesiones</a>
                 <a href="#cursos" class="nav-link">Cursos</a>
                 <a href="#sobre-loly" class="nav-link">Sobre Loly</a>
                 <a href="#testimonios" class="nav-link">Testimonios</a>
-                <a href="consulta-privada.html" class="nav-cta">Solicita tu llamada</a>
+                <a href="consulta-privada.html" class="nav-cta">Solicita tu llamada gratuita</a>
             </div>
         </nav>
 
@@ -1515,14 +1519,14 @@
     </header>
 
     <div class="mobile-drawer" id="mobileDrawer">
-        <a href="index.html">Inicio</a>
-        <a href="#como-trabaja">Cómo trabaja</a>
+        <a href="index.html" class="nav-home">Inicio</a>
+        <a href="#como-trabaja" class="nav-como-trabaja">Cómo trabaja</a>
         <a href="#renacer">Programa Renacer</a>
         <a href="#sesiones">Sesiones</a>
         <a href="#cursos">Cursos</a>
         <a href="#sobre-loly">Sobre Loly</a>
         <a href="#testimonios">Testimonios</a>
-        <a href="consulta-privada.html">Solicita tu llamada</a>
+        <a href="consulta-privada.html">Solicita tu llamada gratuita</a>
     </div>
 
     <!-- ================= HERO ================= -->
@@ -1541,13 +1545,20 @@
                 <a href="#renacer" class="btn btn-primary">Quiero comenzar mi transformación</a>
                 <a href="consulta-privada.html" class="btn btn-ghost">Solicita tu llamada gratuita</a>
             </div>
+            <div class="tab-bar reveal">
+                <a href="#como-trabaja" class="tab-link active">Cómo trabaja</a>
+                <a href="#renacer" class="tab-link">Programa Renacer</a>
+                <a href="#sesiones" class="tab-link">Sesiones</a>
+                <a href="#cursos" class="tab-link">Cursos</a>
+                <a href="#testimonios" class="tab-link">Testimonios</a>
+            </div>
         </div>
 
         <div class="scroll-cue"><span>Descubre más</span><span class="line"></span></div>
     </section>
 
     <!-- ================= METODOLOGÍA ================= -->
-    <section id="ayuda">
+    <section id="ayuda" class="tab-panel" data-tab="como-trabaja">
         <div class="section-head reveal">
             <span class="eyebrow">acompañamiento personalizado</span>
             <h2>¿En qué puedo ayudarte?</h2>
@@ -1559,7 +1570,7 @@
         </div>
     </section>
 
-    <section id="como-trabaja">
+    <section id="como-trabaja" class="tab-panel active" data-tab="como-trabaja">
         <div class="personal-process reveal">
             <span class="eyebrow">un proceso diseñado especialmente para ti</span>
             <h2>Cada historia merece ser escuchada en profundidad</h2>
@@ -1570,135 +1581,12 @@
         </div>
     </section>
 
-    <!-- ================= SERVICIOS ================= -->
-    <section id="servicios">
-        <div class="section-head reveal">
-            <span class="eyebrow">nuestros servicios</span>
-            <h2>Un ritual para cada nudo del destino</h2>
-            <p>Cada trabajo se diseña a la medida de tu situación, con diagnóstico previo y seguimiento personal.</p>
-            <div class="divider"></div>
-        </div>
-
-        <div class="grid-services">
-            <div class="card reveal d1">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M24 40s-15-9-15-20a9 9 0 0 1 15-6 9 9 0 0 1 15 6c0 11-15 20-15 20Z" />
-                </svg>
-                <h3>Amarres de amor</h3>
-                <p>Para reencontrar, fortalecer o sanar un vínculo. Trabajo energético con enfoque de respeto a la
-                    voluntad de ambas partes.</p>
-            </div>
-            <div class="card reveal d2">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4" />
-                    <circle cx="24" cy="24" r="8" />
-                </svg>
-                <h3>Cura de mal de ojo</h3>
-                <p>Diagnóstico y limpieza para cortar el cansancio, la mala suerte repentina y las cargas ajenas.</p>
-            </div>
-            <div class="card reveal d3">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M24 4c6 8 14 12 14 22a14 14 0 1 1-28 0c0-10 8-14 14-22Z" />
-                </svg>
-                <h3>Limpias energéticas</h3>
-                <p>Barridas con hierbas, humo sagrado y oración para liberar el cuerpo y el hogar de energías densas.
-                </p>
-            </div>
-            <div class="card reveal d1">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <rect x="10" y="6" width="28" height="36" rx="3" />
-                    <path d="M17 16h14M17 24h14M17 32h8" />
-                </svg>
-                <h3>Lectura de tarot</h3>
-                <p>Orientación clara sobre amor, trabajo y decisiones importantes, con lectura honesta y sin adornos.
-                </p>
-            </div>
-            <div class="card reveal d2">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M24 4v40M8 14h32M12 24h24M16 34h16" />
-                </svg>
-                <h3>Rituales de abundancia</h3>
-                <p>Trabajos para destrabar el dinero, abrir caminos laborales y atraer prosperidad sostenida.</p>
-            </div>
-            <div class="card reveal d3">
-                <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M24 4 4 14v10c0 12 8 18 20 20 12-2 20-8 20-20V14L24 4Z" />
-                </svg>
-                <h3>Protección espiritual</h3>
-                <p>Sellos y resguardos para el hogar, el negocio y la familia frente a envidias y malas intenciones.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= AMARRES ================= -->
-    <section id="amarres">
-        <div class="feature">
-            <div class="feature-visual reveal">
-                <svg viewBox="0 0 200 200" fill="none" stroke="#D4AF37" stroke-width="1">
-                    <circle cx="100" cy="100" r="80" stroke-opacity="0.5" />
-                    <circle cx="100" cy="100" r="55" stroke-opacity="0.35" />
-                    <path d="M100 45 C 130 70, 130 130, 100 155 C 70 130, 70 70, 100 45 Z" stroke="#4FD1E0"
-                        stroke-opacity="0.7" />
-                    <path d="M60 100 C 85 70, 115 70, 140 100 C 115 130, 85 130, 60 100 Z" stroke-opacity="0.8" />
-                </svg>
-            </div>
-            <div class="feature-text reveal d1">
-                <span class="eyebrow">amarres de amor</span>
-                <h2>Reata lo que el tiempo y la distancia soltaron</h2>
-                <p>El amarre de amor es un trabajo energético ancestral que ayuda a reencauzar el afecto, la atención y
-                    la voluntad de una persona hacia el vínculo. Lo aplicamos con responsabilidad: siempre empezamos con
-                    una lectura para entender qué está pasando realmente entre ambos.</p>
-                <ul>
-                    <li><span class="bullet">✦</span> Diagnóstico energético de la pareja antes de iniciar cualquier
-                        trabajo</li>
-                    <li><span class="bullet">✦</span> Materiales naturales: velas, hierbas, imanes, hilos rituales</li>
-                    <li><span class="bullet">✦</span> Seguimiento durante todo el proceso, no es un trabajo de "una sola
-                        vez"</li>
-                    <li><span class="bullet">✦</span> Total discreción: nadie fuera de la consulta sabrá de tu proceso
-                    </li>
-                </ul>
-                <div class="hero-ctas" style="justify-content:flex-start; margin-top:30px;">
-                    <a href="consulta-privada.html" class="btn btn-primary">Quiero mi diagnóstico</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================= LIMPIAS / MAL DE OJO ================= -->
-    <section id="limpias">
-        <div class="feature reverse">
-            <div class="feature-visual reveal">
-                <svg viewBox="0 0 200 200" fill="none" stroke="#D4AF37" stroke-width="1">
-                    <path d="M100 30c22 30 52 44 52 82a52 52 0 1 1-104 0c0-38 30-52 52-82Z" stroke-opacity="0.6" />
-                    <circle cx="100" cy="118" r="20" stroke="#4FD1E0" stroke-opacity="0.8" />
-                </svg>
-            </div>
-            <div class="feature-text reveal d1">
-                <span class="eyebrow">limpias & cura de mal de ojo</span>
-                <h2>Cuando el cansancio no tiene explicación médica</h2>
-                <p>Cansancio repentino, mala suerte en cadena, llanto sin causa en los niños, negocios que no avanzan:
-                    son señales clásicas de mal de ojo o cargas energéticas. Trabajamos la limpieza en un proceso claro
-                    y ordenado.</p>
-                <div class="ritual-steps">
-                    <div class="ritual-step"><b>Primer encuentro</b><span>Escuchamos tu caso y hacemos un diagnóstico
-                            energético inicial, sin compromiso.</span></div>
-                    <div class="ritual-step"><b>Ritual de limpieza</b><span>Barrida con huevo, hierbas sagradas y humo,
-                            adaptada a tu situación particular.</span></div>
-                    <div class="ritual-step"><b>Sellado y protección</b><span>Colocamos un resguardo para que la carga
-                            no regrese en los próximos días.</span></div>
-                    <div class="ritual-step"><b>Seguimiento</b><span>Revisamos contigo cómo evoluciona tu energía
-                            durante las semanas siguientes.</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="renacer">
+    <section id="renacer" class="tab-panel" data-tab="renacer">
         <div class="section-head reveal"><span class="eyebrow">acompañamiento premium</span><h2>Programa Renacer</h2><p>Transformación Integral en 90 Días</p><div class="divider"></div></div>
         <div class="renacer reveal"><div class="renacer-top"><div><h3>Un proceso de acompañamiento personalizado para transformar vidas desde la raíz.</h3><p>Durante tres meses trabajamos con presencia, continuidad y una ruta adaptada a tu historia para comprender y transformar los patrones que hoy limitan tu bienestar.</p></div><div class="price-tag"><span>Inversión</span><b>USD 1.500</b><span>Online o presencial según disponibilidad</span></div></div><div class="renacer-includes"><div>90 días de acompañamiento personalizado</div><div>12 sesiones individuales de 2 horas</div><div>Soporte y seguimiento por WhatsApp entre sesiones</div><div>Material de apoyo en PDF</div><div>Ejercicios prácticos</div><div>Plan de trabajo adaptado</div><div>Seguimiento continuo de tu evolución</div></div><a href="consulta-privada.html" class="btn btn-primary">Solicita tu llamada gratuita</a></div>
     </section>
 
-    <section id="sesiones">
+    <section id="sesiones" class="tab-panel" data-tab="sesiones">
         <div class="section-head reveal"><span class="eyebrow">sesiones personalizadas</span><h2>Un espacio para ir a la raíz</h2><p>Procesos individuales realizados con respeto por tu historia, tus tiempos y tus creencias.</p><div class="divider"></div></div>
         <div class="service-grid reveal"><article class="service-card"><h3>Regresión Terapéutica Integrativa</h3><p class="service-meta">1 h 45 min – 2 h · Online — Google Meet</p><p>Un encuentro orientado a comprender el origen emocional de los bloqueos, transformar patrones inconscientes e integrar nuevos recursos para tu proceso personal.</p><p class="service-price">USD 150</p></article><article class="service-card"><h3>Regresión Espiritual y Transpersonal</h3><p class="service-meta">1 h 45 min – 3 h · Online — Google Meet</p><p>Integra una dimensión espiritual dentro del proceso cuando la persona lo desea, respetando profundamente sus creencias y su propia experiencia.</p><p class="service-price">USD 197</p></article></div>
     </section>
@@ -1709,7 +1597,7 @@
     </section>
 
     <!-- ================= TESTIMONIOS ================= -->
-    <section id="testimonios">
+    <section id="testimonios" class="tab-panel" data-tab="testimonios">
         <div class="section-head reveal">
             <span class="eyebrow">testimonios</span>
             <h2>Experiencias compartidas con autenticidad</h2>
@@ -1747,7 +1635,7 @@
     </section>
 
     <!-- ================= CURSOS / LOBBY ================= -->
-    <section id="cursos">
+    <section id="cursos" class="tab-panel" data-tab="cursos">
         <div class="section-head reveal">
             <span class="eyebrow">Aprenderlo por tu cuenta</span>
             <h2>También puedes aprender a tu ritmo</h2>
@@ -1958,13 +1846,69 @@
         burger.addEventListener('click', () => drawer.classList.toggle('open'));
         drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.remove('open')));
 
-        // ---------- Active nav link on scroll ----------
+        const homeLinks = document.querySelectorAll('.nav-home');
+        const hashNavLinks = document.querySelectorAll('.nav-link[href^="#"], #mobileDrawer a[href^="#"]');
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+        const revealHomeLink = () => homeLinks.forEach(link => link.style.setProperty('display', 'inline-flex', 'important'));
+        const hideInactivePanels = () => tabPanels.forEach(panel => panel.classList.remove('active'));
+        const setActiveTab = (hash) => {
+            if (!hash) hash = '#como-trabaja';
+            const tabKey = hash.replace('#', '');
+            hideInactivePanels();
+            tabPanels.forEach(panel => {
+                if (panel.id === tabKey || panel.dataset.tab === tabKey) {
+                    panel.classList.add('active');
+                }
+            });
+            tabLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === hash));
+            hashNavLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === hash));
+        };
+        const shouldRevealHome = () => window.location.hash === '#como-trabaja';
+        const scrollToHash = (hash) => {
+            const target = document.querySelector(hash);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
+        const handleTabClick = (targetHash) => {
+            if (targetHash === '#como-trabaja') revealHomeLink();
+            setActiveTab(targetHash);
+            history.replaceState(null, '', targetHash);
+            scrollToHash(targetHash);
+        };
+        tabLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                handleTabClick(link.getAttribute('href'));
+            });
+        });
+        hashNavLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                const targetHash = link.getAttribute('href');
+                const panel = document.querySelector('.tab-panel' + targetHash);
+                if (panel) {
+                    event.preventDefault();
+                    handleTabClick(targetHash);
+                }
+            });
+        });
+        window.addEventListener('hashchange', () => {
+            if (shouldRevealHome()) revealHomeLink();
+            setActiveTab(window.location.hash || '#como-trabaja');
+        });
+        if (shouldRevealHome()) revealHomeLink();
+        setActiveTab(window.location.hash || '#como-trabaja');
+
+        // ---------- Active nav and tab link on scroll ----------
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
+                    const activeHash = '#' + (entry.target.dataset.tab || entry.target.id);
+                    navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === activeHash));
+                    tabLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === activeHash));
                 }
             });
         }, { rootMargin: '-45% 0px -50% 0px' });
