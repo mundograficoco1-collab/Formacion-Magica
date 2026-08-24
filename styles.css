@@ -87,7 +87,7 @@ header {
   background: linear-gradient(135deg, rgba(243,221,142,.16), rgba(79,209,224,.12));
   padding: 2px;
 }
-.brand-text { display: flex; flex-direction: column; line-height: 1.08; }
+.brand-text { display: none; }
 .brand-text b { font-family: 'Cormorant Garamond', Georgia, serif; color: var(--gold-light); font-size: 1rem; }
 .brand-text small { font-size: 0.62rem; letter-spacing: 0.18em; color: var(--parchment-dim); text-transform: uppercase; }
 
@@ -277,6 +277,10 @@ footer .f-brand { font-family: 'Cormorant Garamond', Georgia, serif; color: var(
   nav .nav-links { display: none; }
   .burger { display: flex; }
   .page-hero { min-height: 78vh; }
+}
+@media (max-width: 1080px) {
+  nav .nav-links { display: none !important; }
+  .burger { display: flex; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }

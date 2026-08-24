@@ -1450,7 +1450,7 @@
         /* ================= NUEVA EXPERIENCIA LOLY ================= */
         .brand img, .hero-logo { border-radius: 50% !important; object-fit: cover !important; overflow: hidden !important; }
         .nav-home { display: none !important; }
-        .brand img { width: 56px !important; height: 56px !important; border: 2px solid rgba(212,175,55,.55) !important; padding: 2px !important; background: linear-gradient(135deg, rgba(243,221,142,.16), rgba(79,209,224,.12)) !important; box-shadow: 0 0 0 4px rgba(212,175,55,.12) !important, 0 8px 20px rgba(0,0,0,.18) !important; }
+        .brand img { width: 54px !important; height: 54px !important; border: 2px solid rgba(212,175,55,.55) !important; padding: 2px !important; background: linear-gradient(135deg, rgba(243,221,142,.16), rgba(79,209,224,.12)) !important; box-shadow: 0 0 0 4px rgba(212,175,55,.12) !important, 0 8px 20px rgba(0,0,0,.18) !important; }
         .brand-text { display: none; }
         .hero-logo { width: min(220px, 52vw) !important; height: auto !important; margin: 0 auto 12px; }
         .hero .eyebrow { color: var(--glow-blue); }
@@ -1498,7 +1498,7 @@
         .about-mark { aspect-ratio:1; display:grid; place-items:center; border-radius:50%; border:1px solid var(--line); background:radial-gradient(circle,rgba(79,209,224,.17),transparent 62%); color:var(--gold); font:700 clamp(3rem,9vw,7rem) 'Cinzel Decorative'; }
         .final-cta { text-align:center; max-width:980px; margin:0 auto; padding:62px 30px; border-radius:28px; background:radial-gradient(circle at 50% 0,rgba(212,175,55,.2),transparent 50%),var(--void-2); border:1px solid var(--line); }
         @media (max-width:920px) { .help-grid,.service-grid,.ritual-grid { grid-template-columns:repeat(2,1fr); } .method-path { grid-template-columns:repeat(2,1fr); } .renacer-top,.about-grid { grid-template-columns:1fr; } }
-        @media (max-width:580px) { .help-grid,.service-grid,.ritual-grid,.renacer-includes,.method-path { grid-template-columns:1fr; } .personal-process,.renacer { padding:26px 20px; } .brand img { width:126px !important; } }
+        @media (max-width:580px) { .help-grid,.service-grid,.ritual-grid,.renacer-includes,.method-path { grid-template-columns:1fr; } .personal-process,.renacer { padding:26px 20px; } .brand img { width:48px !important; height:48px !important; } }
     </style>
 </head>
 
@@ -1527,14 +1527,12 @@
         </a>
 
         <nav>
-            <div class="nav-links" style="display:flex; align-items:center; gap:28px;">
+            <div class="nav-links" style="display:flex; align-items:center; gap:clamp(12px, 1.8vw, 24px);">
                 <a href="index.html" class="nav-link nav-home">Inicio</a>
                 <a href="#como-trabaja" class="nav-link nav-como-trabaja">Cómo trabaja</a>
-                <a href="#renacer" class="nav-link">Programa Renacer</a>
-                <a href="#sesiones" class="nav-link">Sesiones</a>
-                <a href="#cursos" class="nav-link">Cursos</a>
-                <a href="#sobre-loly" class="nav-link">Sobre Loly</a>
-                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
                 <a href="consulta-privada.html" class="nav-cta">Solicita tu llamada gratuita</a>
             </div>
         </nav>
@@ -1545,11 +1543,9 @@
     <div class="mobile-drawer" id="mobileDrawer">
         <a href="index.html" class="nav-home">Inicio</a>
         <a href="#como-trabaja" class="nav-como-trabaja">Cómo trabaja</a>
-        <a href="#renacer">Programa Renacer</a>
-        <a href="#sesiones">Sesiones</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#sobre-loly">Sobre Loly</a>
-        <a href="#testimonios">Testimonios</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="cursos.html">Cursos</a>
         <a href="consulta-privada.html">Solicita tu llamada gratuita</a>
     </div>
 
@@ -1733,8 +1729,7 @@
         <div class="f-brand">Loly Luz del Alma</div>
         <p>Especialista en procesos de transformación personal</p>
         <div class="f-links">
-            <a href="index.html">Inicio</a><a href="#renacer">Programa Renacer</a><a href="#sesiones">Sesiones</a><a
-                href="consulta-privada.html">Solicita tu llamada</a>
+            <a href="index.html">Inicio</a><a href="#como-trabaja">Cómo trabaja</a><a href="servicios.html">Servicios</a><a href="testimonios.html">Testimonios</a><a href="cursos.html">Cursos</a><a href="consulta-privada.html">Consulta</a>
         </div>
         <p>© 2026 Loly Luz del Alma. Todos los derechos reservados.</p>
     </footer>
