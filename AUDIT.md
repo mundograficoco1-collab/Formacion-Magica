@@ -49,4 +49,4 @@ Después de cada bloque se ejecutó la validación disponible para un proyecto e
 - Integrar Stripe Checkout o Elements con un backend que cree sesiones, valide webhooks y conceda acceso solo tras pago confirmado.
 - Sustituir el envío `mailto:` de lista de espera por un endpoint real (por ejemplo, un formulario serverless) para no depender del cliente de correo.
 - Ejecutar Lighthouse con un servidor/Chrome disponible y registrar métricas antes/después; no fue posible medirlo en este entorno. La conversión del PNG a WebP/AVIF también queda pendiente: el conversor WebP no está instalado y `sips` no soporta la codificación requerida.
-- Revisar las páginas de contenido antiguo antes de enlazarlas públicamente: actualmente la navegación de varias páginas internas conserva referencias históricas a amarres y mal de ojo.
+- Revisar las páginas de contenido antiguo antes de enlazarlas públicamente para asegurar que la navegación se mantenga actualizada.

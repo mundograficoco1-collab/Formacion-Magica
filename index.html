@@ -803,7 +803,7 @@
             font-size: 0.98rem;
         }
 
-        /* ================= FEATURE SPLIT (amarres / limpias) ================= */
+        /* ================= FEATURE SPLIT ================= */
         .feature {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1486,6 +1486,11 @@
         .service-meta { color:var(--glow-blue); margin:12px 0; font-size:.94rem; }
         .service-price { color:var(--gold); font-size:1.35rem; font-family:'Cormorant Garamond'; }
         .course-placeholder { border:1px dashed rgba(79,209,224,.45); border-radius:24px; padding:48px 28px; text-align:center; background:linear-gradient(135deg,rgba(20,15,34,.85),rgba(7,6,11,.72)); }
+        .presentation-video { max-width:920px; margin:0 auto; text-align:center; }
+        .video-placeholder { aspect-ratio:16/9; margin-top:28px; display:grid; place-items:center; padding:28px; border:1px dashed rgba(79,209,224,.52); border-radius:24px; background:radial-gradient(circle at 50% 20%,rgba(79,209,224,.13),transparent 48%),var(--void-2); }
+        .video-placeholder-inner { max-width:480px; }
+        .video-placeholder .play-mark { display:grid; place-items:center; width:58px; height:58px; margin:0 auto 18px; border:1px solid var(--gold); border-radius:50%; color:var(--gold); font-size:1.25rem; }
+        .video-placeholder p { color:var(--parchment-dim); }
         .brand-transition { margin:72px auto 18px; max-width:1160px; padding:54px clamp(24px,6vw,74px); position:relative; z-index:1; text-align:center; background:linear-gradient(135deg,#102029,#071015); border-block:1px solid rgba(79,209,224,.5); }
         .brand-transition h2 { color:var(--gold-light); }
         .brand-transition p { max-width:720px; margin:16px auto 0; color:var(--parchment); }
@@ -1600,6 +1605,10 @@
         </div>
     </section>
 
+    <section id="video-presentacion">
+        <div class="presentation-video reveal"><span class="eyebrow">video de presentación</span><h2>Conoce a Loly</h2><p>Muy pronto podrás conocer personalmente su enfoque, su manera de trabajar y lo que encontrarás en este espacio.</p><div class="video-placeholder" data-video-source="PENDIENTE"><div class="video-placeholder-inner"><div class="play-mark" aria-hidden="true">▶</div><h3>Video pendiente de incorporar</h3><p>Este espacio está preparado para insertar el archivo o la URL del video de presentación.</p></div></div></div>
+    </section>
+
     <section id="renacer" class="tab-panel" data-tab="renacer">
         <div class="section-head reveal"><span class="eyebrow">acompañamiento premium</span><h2>Programa Renacer</h2><p>Transformación Integral en 90 Días</p><div class="divider"></div></div>
         <div class="renacer reveal"><div class="renacer-top"><div><h3>Un proceso de acompañamiento personalizado para transformar vidas desde la raíz.</h3><p>Durante tres meses trabajamos con presencia, continuidad y una ruta adaptada a tu historia para comprender y transformar los patrones que hoy limitan tu bienestar.</p></div><div class="price-tag"><span>Inversión</span><b>USD 1.500</b><span>Online o presencial según disponibilidad</span></div></div><div class="renacer-includes"><div>90 días de acompañamiento personalizado</div><div>12 sesiones individuales de 2 horas</div><div>Soporte y seguimiento por WhatsApp entre sesiones</div><div>Material de apoyo en PDF</div><div>Ejercicios prácticos</div><div>Plan de trabajo adaptado</div><div>Seguimiento continuo de tu evolución</div></div><a href="consulta-privada.html" class="btn btn-primary">Solicita tu llamada gratuita</a></div>
@@ -1653,7 +1662,7 @@
         </div>
     </section>
 
-    <section class="brand-transition" aria-labelledby="formacion-title"><span class="eyebrow">una propuesta independiente</span><h2 id="formacion-title">Formación en prácticas espirituales</h2><p>La formación en amarres, limpias y protección es una línea educativa distinta del acompañamiento terapéutico de Loly Luz del Alma. Explora sus contenidos con criterio propio y responsabilidad.</p><a href="cursos.html" class="btn btn-ghost" style="margin-top:24px;">Ir a formación</a></section>
+    <section class="brand-transition" aria-labelledby="formacion-title"><span class="eyebrow">una propuesta independiente</span><h2 id="formacion-title">Formación para el desarrollo personal</h2><p>La formación reúne recursos para profundizar con criterio propio, respeto y responsabilidad.</p><a href="cursos.html" class="btn btn-ghost" style="margin-top:24px;">Ir a formación</a></section>
 
     <!-- ================= CURSOS / LOBBY ================= -->
     <section id="cursos" class="tab-panel" data-tab="cursos">
@@ -1663,83 +1672,7 @@
             <p>Si prefieres comenzar por tu cuenta, encontrarás cursos grabados, talleres y programas diseñados para ayudarte a desarrollar nuevas herramientas de crecimiento personal y espiritual desde cualquier lugar del mundo.</p>
             <div class="divider"></div>
         </div>
-        <div class="course-placeholder reveal"><span class="eyebrow">próximamente</span><h3>Una nueva biblioteca de cursos y talleres</h3><p>Estamos preparando el espacio para compartir los programas disponibles. Suscríbete a una llamada para conocer las próximas propuestas.</p><a href="consulta-privada.html" class="btn btn-ghost">Quiero recibir información</a></div>
-
-        <div class="lobby-wrap">
-            <div class="lobby-card locked-panel reveal d1" id="lockedCard">
-                <div class="locked-content">
-                    <span class="tag">curso completo</span>
-                    <h3>Formación en Amarres, Limpias y Protección</h3>
-                    <p style="color:var(--parchment-dim);">12 módulos en video, rituales paso a paso, materiales
-                        descargables y acceso a la comunidad privada del instituto.</p>
-                    <div class="price">$1,490 <small>MXN — acceso de por vida</small></div>
-                </div>
-                <div class="lock-overlay">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="5" y="11" width="14" height="9" rx="2" />
-                        <path d="M8 11V7a4 4 0 0 1 8 0v4" />
-                    </svg>
-                    <p>Adquiere tu acceso para desbloquear el curso completo en este mismo lobby.</p>
-                    <button class="btn btn-primary" id="openPay">Adquirir acceso — $1,490 MXN</button>
-                </div>
-            </div>
-
-            <div class="lobby-card reveal d2">
-                <span class="tag">consulta 1 a 1</span>
-                <h3>Mentoría privada</h3>
-                <p style="color:var(--parchment-dim);">Sesión personal para acompañarte en tu primer amarre, limpia o
-                    ritual de protección con guía en vivo.</p>
-                <div class="price">Desde $650 <small>MXN / sesión</small></div>
-                <a href="consulta-privada.html" class="btn btn-ghost" style="margin-top:10px;">Agendar sesión</a>
-            </div>
-        </div>
-
-        <!-- Curso desbloqueado tras "pago" -->
-        <div id="curso-desbloqueado" style="margin-top:60px;">
-            <div class="section-head reveal in">
-                <span class="eyebrow">acceso confirmado</span>
-                <h2>Tu formación ya está disponible</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">01</span>
-                    <div><b>Fundamentos del amarre de amor</b><br><span>28 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">02</span>
-                    <div><b>Diagnóstico energético de pareja</b><br><span>34 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">03</span>
-                    <div><b>Ritual paso a paso: velas e imanes</b><br><span>41 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">04</span>
-                    <div><b>Detectar el mal de ojo</b><br><span>22 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">05</span>
-                    <div><b>Limpia completa con huevo y hierbas</b><br><span>39 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <div class="modulo">
-                <div class="m-left"><span class="m-num">06</span>
-                    <div><b>Sellos de protección para el hogar</b><br><span>30 min</span></div>
-                </div>
-                <div class="m-play">▶</div>
-            </div>
-            <p style="text-align:center; color:var(--parchment-dim); margin-top:22px; font-size:0.92rem;">+ 6 módulos
-                adicionales y materiales descargables en tu panel.</p>
-        </div>
+        <div class="course-placeholder reveal"><span class="eyebrow">catálogo en preparación</span><h3>Próximamente, cursos y talleres</h3><p>El catálogo está siendo preparado para incorporar cada curso, su portada, modalidad y lecciones cuando los contenidos estén disponibles.</p><a href="cursos.html" class="btn btn-ghost">Conocer la sección de cursos</a></div>
     </section>
 
     <section id="sobre-loly">
@@ -1805,24 +1738,6 @@
         </div>
         <p>© 2026 Loly Luz del Alma. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- ================= LISTA DE ESPERA ================= -->
-    <div class="modal-backdrop" id="payModal">
-        <div class="modal">
-            <button class="modal-close" id="closePay" type="button" aria-label="Cerrar">×</button>
-
-            <div id="payFormState">
-                <h3>Próximamente — únete a la lista de espera</h3>
-                <p class="sub">Déjanos tus datos y te avisaremos cuando la formación esté disponible.</p>
-                <form action="mailto:contacto@formacionmagica.com" method="post" enctype="text/plain">
-                    <div class="field"><label for="waitlist-name">Nombre</label><input id="waitlist-name" name="nombre" type="text" required placeholder="Tu nombre completo"></div>
-                    <div class="field"><label for="waitlist-email">Correo</label><input id="waitlist-email" name="correo" type="email" required placeholder="tu@correo.com"></div>
-                    <button class="btn btn-primary" type="submit">Unirme a la lista de espera</button>
-                    <small class="note">No solicitamos ni procesamos datos de tarjeta en este sitio.</small>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <script>
         // ---------- Preloader ----------
@@ -1957,20 +1872,6 @@
         }
         initStars(); drawStars();
         window.addEventListener('resize', initStars);
-
-        // ---------- Waitlist modal ----------
-        const payModal = document.getElementById('payModal');
-        const openPay = document.getElementById('openPay');
-        const closePay = document.getElementById('closePay');
-
-        function openModal() {
-            payModal.classList.add('open');
-        }
-        function closeModal() { payModal.classList.remove('open'); }
-
-        if (openPay) openPay.addEventListener('click', openModal);
-        closePay.addEventListener('click', closeModal);
-        payModal.addEventListener('click', (e) => { if (e.target === payModal) closeModal(); });
 
     </script>
 </body>

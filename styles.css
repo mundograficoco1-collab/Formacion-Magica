@@ -225,6 +225,28 @@ section { padding: 40px 0; }
 .module-card .meta { color: var(--parchment-dim); font-size: 0.92rem; }
 .module-card .play { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold); display: inline-flex; justify-content: center; align-items: center; }
 
+.course-intro { margin-top: -80px; position: relative; }
+.course-section-heading { margin: 34px 0 18px; }
+.course-section-heading h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.course-catalog { display: grid; gap: 24px; }
+.course-empty { padding: 42px 30px; text-align: center; border: 1px dashed rgba(79,209,224,.45); border-radius: 24px; background: linear-gradient(135deg, rgba(20,15,34,.85), rgba(7,6,11,.72)); }
+.course-empty h3 { margin-bottom: 10px; }
+.course-empty p { color: var(--parchment-dim); max-width: 660px; margin: 0 auto; }
+.course-card { display: grid; grid-template-columns: minmax(220px, .7fr) 1.3fr; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(180deg, var(--void), var(--void-2)); box-shadow: 0 22px 50px rgba(0,0,0,.16); }
+.course-cover { min-height: 240px; background: rgba(212,175,55,.06); }
+.course-cover img { width: 100%; height: 100%; object-fit: cover; }
+.course-cover-placeholder { height: 100%; min-height: 240px; display: grid; place-items: center; color: var(--parchment-dim); border-right: 1px solid var(--line); }
+.course-card-content { padding: 30px; }
+.course-card-content h3 { margin-bottom: 8px; }
+.course-card-content > p { color: var(--parchment-dim); }
+.lesson-list { display: grid; gap: 10px; margin-top: 20px; }
+.lesson-button { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px; color: var(--parchment); text-align: left; cursor: pointer; border: 1px solid rgba(212,175,55,.18); border-radius: 12px; background: rgba(255,255,255,.025); font: inherit; }
+.lesson-button:hover { border-color: var(--gold); }
+.lesson-button > span { width: 30px; height: 30px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: var(--gold); color: var(--ink); font-family: var(--font-display); font-weight: 700; }
+.lesson-button small { display: block; color: var(--parchment-dim); margin-top: 2px; }
+.lesson-button i { margin-left: auto; color: var(--gold); font-style: normal; }
+.bunny-player { width: 100%; min-height: 360px; margin-top: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--ink); }
+
 .contact-card { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .contact-list { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; }
 .contact-list a { display: flex; align-items: center; gap: 10px; color: var(--parchment); }
@@ -248,6 +270,8 @@ footer .f-brand { font-family: 'Cormorant Garamond', Georgia, serif; color: var(
 
 @media (max-width: 920px) {
   .grid-2, .contact-card { grid-template-columns: 1fr; }
+  .course-card { grid-template-columns: 1fr; }
+  .course-cover, .course-cover-placeholder { min-height: 210px; border-right: 0; border-bottom: 1px solid var(--line); }
 }
 @media (max-width: 800px) {
   nav .nav-links { display: none; }
