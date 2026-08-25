@@ -17,6 +17,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal-document {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+
+    .legal-panel {
+      background: linear-gradient(180deg, rgba(16, 12, 24, 0.98), rgba(12, 9, 16, 0.96));
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 24px;
+      padding: clamp(28px, 4vw, 48px);
+      box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+    }
+
+    .legal-panel h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2.1rem, 4vw, 3rem);
+    }
+
+    .legal-panel p,
+    .legal-panel li {
+      color: var(--parchment-dim);
+      font-size: 1.02rem;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .legal-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+    }
+
+    .legal-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
   <canvas id="stars"></canvas>
@@ -59,43 +104,43 @@
     </div>
   </section>
 
-  <main class="page-content">
-    <section class="section-card reveal">
-      <span class="eyebrow">información general</span>
+  <main class="legal-document">
+    <section class="legal-panel reveal">
+      <span class="eyebrow">Información general</span>
       <h2>Política de tratamiento de datos</h2>
       <p>En Loly Luz del Alma valoramos la confianza que depositas al escribirnos, compartir tu historia o solicitar información sobre nuestros servicios. Por ello, tratamos tus datos personales con responsabilidad, discreción y respeto por tu privacidad.</p>
       <p>La información recabada puede incluir nombre, correo electrónico, número de contacto, país, motivos de consulta y cualquier dato que compartas de forma voluntaria a través del formulario, WhatsApp o correo electrónico.</p>
+
+      <div class="legal-grid">
+        <article class="legal-card">
+          <h3>1. Responsable</h3>
+          <p>Loly Luz del Alma es la responsable del tratamiento de los datos personales recabados a través del sitio web, formularios y canales de contacto.</p>
+        </article>
+        <article class="legal-card">
+          <h3>2. Finalidad</h3>
+          <p>Usamos tus datos para responder consultas, coordinar sesiones, ofrecer información sobre servicios y mantener una comunicación clara y personalizada.</p>
+        </article>
+        <article class="legal-card">
+          <h3>3. Confidencialidad</h3>
+          <p>La información compartida se trata con discreción y no se compartirá con terceros salvo obligación legal o consentimiento expreso del titular.</p>
+        </article>
+        <article class="legal-card">
+          <h3>4. Consentimiento</h3>
+          <p>Al completar un formulario, escribir por WhatsApp o enviar un correo, aceptas que utilicemos tus datos únicamente para la finalidad informada y acordada con vos.</p>
+        </article>
+        <article class="legal-card">
+          <h3>5. Derechos</h3>
+          <p>Puedes solicitar acceso, rectificación, eliminación, limitación o oposición al tratamiento de tus datos, así como retirar tu consentimiento cuando corresponda.</p>
+        </article>
+        <article class="legal-card">
+          <h3>6. Contacto</h3>
+          <p>Para consultas sobre privacidad o tratamiento de información, puedes escribirnos por WhatsApp o mediante el correo de contacto del sitio.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="grid-3">
-      <div class="detail-card reveal">
-        <h3>1. Responsable</h3>
-        <p>Loly Luz del Alma es la responsable del tratamiento de los datos personales recabados a través del sitio web, formularios y canales de contacto.</p>
-      </div>
-      <div class="detail-card reveal">
-        <h3>2. Finalidad</h3>
-        <p>Usamos tus datos para responder consultas, coordinar sesiones, ofrecer información sobre servicios, planificar acompañamientos y mantener una comunicación clara y personalizada.</p>
-      </div>
-      <div class="detail-card reveal">
-        <h3>3. Confidencialidad</h3>
-        <p>La información compartida se trata con discreción y no se compartirá con terceros salvo obligación legal o consentimiento expreso del titular.</p>
-      </div>
-      <div class="detail-card reveal">
-        <h3>4. Consentimiento</h3>
-        <p>Al completar un formulario, escribir por WhatsApp o enviar un correo, aceptas que utilicemos tus datos únicamente para la finalidad informada y acordada con vos.</p>
-      </div>
-      <div class="detail-card reveal">
-        <h3>5. Derechos</h3>
-        <p>Puedes solicitar acceso, rectificación, eliminación, limitación o oposición al tratamiento de tus datos, así como retirar tu consentimiento cuando corresponda.</p>
-      </div>
-      <div class="detail-card reveal">
-        <h3>6. Contacto</h3>
-        <p>Para consultas sobre privacidad o tratamiento de información, puedes escribirnos por WhatsApp o mediante el correo de contacto del sitio.</p>
-      </div>
-    </section>
-
-    <section class="section-card reveal">
-      <span class="eyebrow">términos aplicables</span>
+    <section class="legal-panel reveal" style="margin-top:26px;">
+      <span class="eyebrow">Términos aplicables</span>
       <h2>Uso del sitio y contacto</h2>
       <p>La información publicada en este sitio tiene carácter orientativo y no sustituye la atención profesional personalizada. Los servicios ofrecidos están destinados a apoyo, acompañamiento y orientación en procesos de crecimiento personal, espiritual y emocional.</p>
       <p>El contenido del sitio no debe interpretarse como diagnóstico, tratamiento médico ni garantía de resultados. Cada proceso se adapta a la persona, su historia y su evolución.</p>
